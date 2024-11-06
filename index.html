@@ -1,82 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motala Skatehall</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <style>
-        /* Custom styles */
-        .cover-video {
-            position: relative;
-            overflow: hidden;
-            height: 60vh;
-        }
+      /* Custom styles */
+      .cover-video {
+        position: relative;
+        overflow: hidden;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
 
-        .cover-video video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+      .cover-video iframe {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .logo {
+        align-self: self-start;
+      }
 
-        .content-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+      .content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
 
-        .zoom-image {
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            opacity: 0.8;
-        }
+      .zoom-image {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0.8;
+      }
 
-        .zoom-image:hover {
-            transform: scale(1.1);
-            opacity: 1;
-        }
+      .zoom-image:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Navbar with hamburger menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Motala Skatehall</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">Om Oss</a></li>
-                <li class="nav-item"><a class="nav-link" href="#pricing">Prislista</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.jpg" class="img-fluid"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Om Oss</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Prislista</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Cover video section -->
+    <!-- Cover video section with embedded YouTube video -->
     <div class="cover-video">
-        <video autoplay muted loop>
-            <source src="your-placeholder-video.mp4" type="video/mp4">
-        </video>
-        <div class="content-overlay">
-            <h1>Motala Skatehall</h1>
-            <p>En plats för alla skateboardentusiaster</p>
-        </div>
+      <iframe
+        src="https://www.youtube.com/watch?v=6yDSHC0EPyc&ab_channel=ThrasherMagazine"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="content-overlay">
+        <h1>Motala Skatehall</h1>
+        <p>En plats för alla skateboardentusiaster</p>
+      </div>
     </div>
-
-    <!-- About section -->
-    <section id="about" class="container mt-5">
-        <h2 class="text-center">Om Motala Skatehall</h2>
-        <p>Motala skatehall drivs av Motala Skateförening, en ideell förening. Hallen ligger i Platenskolans lokaler, Nytorpsgatan 3. Öppen från september till maj, hallen är tillgänglig för medlemmar under angivna tider som uppdateras på våra sociala medier.</p>
-    </section>
 
     <!-- Pricing section -->
     <section id="pricing" class="container mt-5">
@@ -94,13 +113,13 @@
         <h2 class="text-center">Galleri</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <img src="your-placeholder-image.jpg" alt="Skate Image 1" class="img-fluid zoom-image">
+                <img src="images/cover.jpg" alt="Skate Image 1" class="img-fluid zoom-image">
             </div>
             <div class="col-md-4 mb-4">
-                <img src="your-placeholder-image.jpg" alt="Skate Image 2" class="img-fluid zoom-image">
+                <img src="images/cover2.jpg" alt="Skate Image 2" class="img-fluid zoom-image">
             </div>
             <div class="col-md-4 mb-4">
-                <img src="your-placeholder-image.jpg" alt="Skate Image 3" class="img-fluid zoom-image">
+                <img src="images/cover3.jpg" alt="Skate Image 3" class="img-fluid zoom-image">
             </div>
         </div>
     </section>
