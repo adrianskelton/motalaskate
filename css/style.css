@@ -1,3 +1,28 @@
+.navbar-nav .nav-link {
+  position: relative;
+  color: white; /* Adjust as necessary */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Position the line 2px below the link */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #55bce2; /* Adjust to your preferred color */
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0f0f0; /* Optional: Change link color on hover */
+}
+
 /* Custom styling */
 .cover-photo {
   background-image: url("cover.jpg"); /* Replace with the path to your cover photo */
