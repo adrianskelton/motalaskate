@@ -148,31 +148,36 @@
 
 
       /* Kickflip anim */
-      .kickflip-container {
-        perspective: 1000px; /* Adds depth to the 3D effect */
-      }
       
-      .kickflip-text {
-        font-size: 4rem;
-        display: inline-block;
-        transform-origin: bottom center;
-        animation: kickflip 2s infinite ease-in-out;
-      }
-      
-      @keyframes kickflip {
-        0% {
-          transform: rotateX(0deg);
-        }
-        20% {
-          transform: rotateX(180deg);
-        }
-        50% {
-          transform: rotateX(360deg);
-        }
-        70% {
-          transform: rotateX(180deg);
-        }
-        100% {
-          transform: rotateX(0deg);
-        }
-      }
+.kickflip-container {
+  perspective: 1000px; /* Adds depth to the 3D effect */
+}
+
+.kickflip-text {
+  font-size: 4rem;
+  display: inline-block;
+  transform-origin: bottom center;
+}
+
+/* Initial state of animation */
+.kickflip-animate {
+  animation: kickflip 1s ease-in-out;
+}
+
+@keyframes kickflip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  20% {
+    transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  70% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
