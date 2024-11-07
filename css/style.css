@@ -27,6 +27,18 @@
   height: 100%;
 }
 
+.heading-white {
+  color: white;
+}
+
+.heading-blue {
+  color: #45b4e9;
+}
+
+.blackground-blue {
+  background-color: #45b4e9;
+}
+
 .logo {
   margin-right: 10px; /* Adjusts spacing between logo and navbar items */
 }
@@ -67,7 +79,6 @@ h2 {
   font-family: "Anton", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: #45b4e9;
 }
 
 /* Navbar */
