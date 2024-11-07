@@ -63,8 +63,9 @@
       }
 
       h1, h2 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Anton', sans-serif;
         font-weight: 700;
+        font-style: italic;
         color: #45b4e9;
       }
 
