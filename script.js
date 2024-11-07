@@ -1,13 +1,14 @@
-document.querySelector('.kickflip-text').addEventListener('click', function () {
-    const textElement = this;
+document.addEventListener("DOMContentLoaded", function() {
+    const board = document.querySelector('.kickflip-board');
   
-    // Remove the animation class (if it exists) to allow re-trigger
-    textElement.classList.remove('kickflip-animate');
-    
-    // Trigger a reflow to restart animation
-    void textElement.offsetWidth;
-    
-    // Add the animation class back
-    textElement.classList.add('kickflip-animate');
+    board.addEventListener('click', function() {
+      // Remove the animation class if it exists
+      board.classList.remove('kickflip-animate');
+  
+      // Trigger reflow to restart the animation
+      void board.offsetWidth;
+  
+      // Add the animation class again
+      board.classList.add('kickflip-animate');
+    });
   });
-  
