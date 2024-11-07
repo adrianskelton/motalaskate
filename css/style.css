@@ -38,7 +38,7 @@
 .background-blue {
   background-color: #55bce2; /* Apply the blue background color */
   width: 100%; /* Ensure it takes up full width of the screen */
-  padding: 50px 0; /* Add padding for spacing */
+  padding: 1px 0; /* Add padding for spacing */
 }
 
 #about .container {
