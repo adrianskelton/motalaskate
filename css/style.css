@@ -145,6 +145,10 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.footer {
+  background-color: #55bce2;
+}
+
 /* Footer for contact */
 #contact p {
   font-size: 1.1rem;
