@@ -65,7 +65,7 @@
       h1, h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        color: #222;
+        color: #45b4e9;
       }
 
       /* Navbar */
@@ -137,6 +137,7 @@
       }
 
       h2 {
+        color: #45b4e9;
         margin-bottom: 1.5rem;
       }
 
