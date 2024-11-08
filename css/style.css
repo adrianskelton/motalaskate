@@ -282,7 +282,12 @@ section {
     width: 100%; /* Full width for screens 768px or smaller */
   }
 
+  /* Adjust the scroll offset for anchor links */
+  html {
+    scroll-padding-top: 60px; /* Adjust based on your navbar height */
+  }
+
   section, h1, h2, h3 {
-    scroll-margin-top: 60px; /* Slightly smaller margin for smaller navbars on mobile */
+    scroll-margin-top: 10px; /* Slightly smaller margin for smaller navbars on mobile */
   }
 }
