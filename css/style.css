@@ -282,10 +282,9 @@ h2 {
 }
 
 /* Adjust scroll behavior for links */
-section {
-  scroll-margin-top: 30px; /* Adjust this value based on your navbar height */
+section, h1, h2, h3 {
+  scroll-margin-top: 190px; /* Default margin for mobile */
 }
-
 
 /* Full width on mobile and tablets */
 @media (max-width: 768px) {
@@ -299,19 +298,21 @@ section {
   }
 
   section, h1, h2, h3 {
-    scroll-margin-top: 10px; /* Slightly smaller margin for smaller navbars on mobile */
+    scroll-margin-top: 190px; /* Adjusted for mobile */
   }
-}
 
-/* Media Query for Mobile and Desktop */
-@media (max-width: 768px) {
   #gallery .gallery-container {
-    flex-direction: row; /* Ensures images are in a row */
+    flex-direction: row; /* Ensures images are in a row on mobile */
   }
 }
 
+/* Desktop (min-width: 768px) */
 @media (min-width: 768px) {
   #gallery .gallery-container {
-    flex-direction: row; /* Ensures images are in a row */
+    flex-direction: row; /* Ensures images are in a row on desktop */
+  }
+
+  section, h1, h2, h3 {
+    scroll-margin-top: 120px; /* Adjusted for desktop, a smaller margin than mobile */
   }
 }
