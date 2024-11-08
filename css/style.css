@@ -313,6 +313,6 @@ section, h1, h2, h3 {
   }
 
   section, h1, h2, h3 {
-    scroll-margin-top: 120px; /* Adjusted for desktop, a smaller margin than mobile */
+    scroll-margin-top: 180px; /* Adjusted for desktop, a smaller margin than mobile */
   }
 }
