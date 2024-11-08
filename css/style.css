@@ -127,10 +127,7 @@ body {
   margin: 0 auto; /* Center the content */
 }
 
-#gallery .container {
-  max-width: 1200px; /* Keeps content centered and readable */
-  margin: 0 auto; /* Center the content */
-}
+
 
 .pwhite {
   color: white;
@@ -227,24 +224,38 @@ h2 {
   font-weight: 500;
 }
 
-/* Zoom effect on gallery images */
+/* Gallery section */
 
-#gallery img {
-  height: 300px; /* Adjust this to your desired height */
-  object-fit: cover;
-  width: 100%; /* Ensure images fill their container */
-  display: block; /* Removes extra spacing under images */
+#gallery {
+  background-color: #f8f9fa; /* background color */
+  padding: 20px 0;
 }
 
-.zoom-image {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.85;
-  border-radius: 8px;
+#gallery .gallery-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Ensures smooth snapping to images */
 }
 
-.zoom-image:hover {
-  transform: scale(1.1);
-  opacity: 1;
+#gallery .gallery-container img {
+  width: 100%; /* Adjusts image width to fill the container */
+  max-width: 300px; /* Ensures images don't become too large */
+  margin-right: 10px; /* Adds spacing between images */
+  object-fit: cover; /* Keeps aspect ratio of images intact */
+  scroll-snap-align: start; /* Aligns images to the start when scrolling */
+}
+
+#gallery .gallery-container::-webkit-scrollbar {
+  height: 8px; /* Custom scrollbar */
+}
+
+#gallery .gallery-container::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+#gallery .gallery-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
 }
 
 /* Section Styling */
@@ -289,5 +300,18 @@ section {
 
   section, h1, h2, h3 {
     scroll-margin-top: 10px; /* Slightly smaller margin for smaller navbars on mobile */
+  }
+}
+
+/* Media Query for Mobile and Desktop */
+@media (max-width: 768px) {
+  #gallery .gallery-container {
+    flex-direction: row; /* Ensures images are in a row */
+  }
+}
+
+@media (min-width: 768px) {
+  #gallery .gallery-container {
+    flex-direction: row; /* Ensures images are in a row */
   }
 }
