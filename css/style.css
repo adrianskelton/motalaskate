@@ -241,4 +241,8 @@ section {
   body {
     width: 100%; /* Full width for screens 768px or smaller */
   }
+
+  section, h1, h2, h3 {
+    scroll-margin-top: 60px; /* Slightly smaller margin for smaller navbars on mobile */
+  }
 }
