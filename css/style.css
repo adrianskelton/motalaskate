@@ -283,7 +283,7 @@ h2 {
 
 /* Adjust scroll behavior for links */
 section {
-  scroll-margin-top: 50px; /* Adjust this value based on your navbar height */
+  scroll-margin-top: 30px; /* Adjust this value based on your navbar height */
 }
 
 
