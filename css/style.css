@@ -229,3 +229,16 @@ h2 {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+/* Adjust scroll behavior for links */
+section {
+  scroll-margin-top: 80px; /* Adjust this value based on your navbar height */
+}
+
+
+/* Full width on mobile and tablets */
+@media (max-width: 768px) {
+  body {
+    width: 100%; /* Full width for screens 768px or smaller */
+  }
+}
