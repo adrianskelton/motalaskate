@@ -1,3 +1,11 @@
+body {
+  width: 90%; /* Set body width to 90% of the viewport */
+  margin: 0 auto; /* Center the body content horizontally */
+  font-family: "Roboto", sans-serif; /* Keep your preferred font style */
+  color: #333;
+  background-color: #f8f9fa; /* Background color */
+}
+
 .navbar-nav .nav-link {
   position: relative;
   color: white; /* Adjust as necessary */
