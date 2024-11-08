@@ -172,6 +172,14 @@ h2 {
 }
 
 /* Zoom effect on gallery images */
+
+#gallery img {
+  height: 300px; /* Adjust this to your desired height */
+  object-fit: cover;
+  width: 100%; /* Ensure images fill their container */
+  display: block; /* Removes extra spacing under images */
+}
+
 .zoom-image {
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.85;
